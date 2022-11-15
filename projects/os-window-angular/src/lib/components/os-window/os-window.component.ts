@@ -37,7 +37,8 @@ export class OsWindowContent {}
   styleUrls: [
     './os-window.component.scss',
     '../../themes/arc/arc.scss',
-    '../../themes/win98/win98.scss'
+    '../../themes/win98/win98.scss',
+    '../../themes/macOS/macOS.scss'
   ],
   encapsulation: ViewEncapsulation.None
 })

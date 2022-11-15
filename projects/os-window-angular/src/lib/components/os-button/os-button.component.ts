@@ -23,7 +23,8 @@ import { theme_list } from "../../themes/theme_list";
   styleUrls: [
     './os-button.component.scss',
     '../../themes/arc/_buttons.scss',
-    '../../themes/win98/_buttons.scss'
+    '../../themes/win98/_buttons.scss',
+    '../../themes/macOS/_buttons.scss',
   ],
   encapsulation: ViewEncapsulation.None
 })

@@ -92,35 +92,29 @@ TO DO:
         [cdkDragFreeDragPosition]="this.win.cdkAnchors.nw"
         [cdkDragDisabled]="this.win.rules.disableResize"
         (mousedown)="this.win.focus()"
-        class="window-resize nw"></div>
-
-
+        class="window-resize nw">
+    </div>
     <div class="window-bar">
-
         <div class="window-bar-anchor"
             cdkDragHandle
             fxLayout="row"
             fxLayoutAlign="space-evenly center"
             (dblclick)="this.win.maximize()">
-
+            <div class="controls-separator"></div>
+            <div class="controls-container"
+                fxLayoutAlign="space-between center">
+                <button class="controls close" (click)="this.win.close()"></button>
+                <button class="controls minimize" (click)="this.win.minimize()"></button>
+                <button class="controls maximize" (click)="this.win.maximize()"></button>                
+            </div>
             <div class="window-title"
                 fxFlex>
                 <ng-content select="window-title, [window-title], [windowTitle]"></ng-content>
             </div>
-
-            <div class="controls-separator"></div>
-
-            <div class="controls-container"
-                fxLayoutAlign="space-between center">
-
-                <button class="controls minimize" (click)="this.win.minimize()"></button>
-                <button class="controls maximize" (click)="this.win.maximize()"></button>
-                <button class="controls close" (click)="this.win.close()"></button>
-            </div>
         </div>
     </div>
 
-    <div class="window-content">
+<!--     <div class="window-content">
 
         <ng-scrollbar class="win98-scrollbar" track="all" trackClass="os-scrollbar-track" thumbClass="os-scrollbar-thumb">
 
@@ -128,6 +122,5 @@ TO DO:
 
             </ng-content>
 
-        </ng-scrollbar>
-    </div>
+        </ng-scrollbar>  -->
 </div>

@@ -49,7 +49,7 @@
 
         height: 8px;
         width: 8px;
-        
+
         cursor:  var(--cursorNE);
     }
 
@@ -59,7 +59,7 @@
 
         height: calc(100% - (8px - 2 * var(--winBorder)) );
         width: 8px;
-        
+
         cursor:  var(--cursorE);
     }
 
@@ -69,7 +69,7 @@
 
         height: 8px;
         width: 8px;
-        
+
         cursor:  var(--cursorSE);
     }
 
@@ -79,7 +79,7 @@
 
         height: 8px;
         width: calc(100% - (8px - 2 * var(--winBorder)) );
-        
+
         cursor:  var(--cursorS);
     }
 
@@ -89,7 +89,7 @@
 
         height: 8px;
         width: 8px;
-        
+
         cursor:  var(--cursorSW);
     }
 
@@ -99,7 +99,7 @@
 
         height: calc(100% - (8px - 2 * var(--winBorder)) );
         width: 8px;
-        
+
         cursor:  var(--cursorW);
     }
 
@@ -109,25 +109,23 @@
 
         height: 8px;
         width: 8px;
-        
+
         cursor:  var(--cursorNW);
     }
 
 
     .window-bar {
-        padding-top: 4px;
-        padding-right: 4px;
-        padding-left: 4px;
-    
+
+
         .window-bar-anchor {
             .minimize {
                 display: var(--minimizeButton);
             }
-            
+
             .maximize {
                 display: var(--maximizeButton);
             }
-            
+
             .close {
                 display: var(--closeButton);
             }

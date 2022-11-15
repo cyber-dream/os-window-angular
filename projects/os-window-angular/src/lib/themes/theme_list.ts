@@ -8,5 +8,10 @@ export const theme_list = [
         theme: "win98",
         variants: ["classic", "vaporwave"],
         palette: ["red", "orange", "yellow", "lime", "green", "aqua", "blue", "purple", "magenta"]
-    }
+    },
+    {
+        theme: "macOS",
+        variants: ["light", "dark"],
+        palette: ["red", "orange", "yellow", "lime", "green", "aqua", "blue", "purple", "magenta"]
+    },
 ]
